@@ -40,7 +40,14 @@ flutter:
     # https://flutter.dev/to/pubspec-plugin-platforms
     # -------------------
       some_platform:
-        pluginClass: somePluginClass
+        flutter:
+          plugin:
+            platforms:
+              android:
+                package: com.example.moja_app_auth
+                pluginClass: MojaAppAuthPlugin
+              ios:
+                pluginClass: MojaAppAuthPlugin
     # -------------------
 
   # To add assets to your plugin package, add an assets section, like this:
